@@ -1,20 +1,23 @@
 <script setup lang="ts">
-import { ref, reactive } from "vue";
+import { ref, onMounted, computed } from "vue";
 import dayjs from "dayjs";
-import { TrinityRingsSpinner } from "epic-spinners";
+import { useAsyncState } from "@vueuse/core";
+import { getLivedrawResult } from "@/services/livedraw.js";
 import Number from "@/components/Number.vue";
 
 const ballClass =
   "flex items-center justify-center w-8 h-8 lg:w-9 lg:h-9 rounded-full bg-gradient-to-br shadow-md shadow-[rgba(0,0,0,0.4)]";
 
-const result = ref({
-  id: 1,
-  first: [null, "5", "6", "7", "3", "8"],
-  second: ["9", "3", "4", "7", "5", "0"],
-  third: ["7", "4", "7", null, "9", "6"],
-  starter: ["3", "9", "4", "5", "7", "8"],
-  consolation: ["4", "8", "4", "6", "9", "5"],
-  created_at: "2023-03-23T10:45:00.000000Z",
+const { state, isReady, execute } = useAsyncState(() => {
+  return getLivedrawResult();
+}, {});
+
+const result = computed(() => state.value);
+
+onMounted(() => {
+  setInterval(async () => {
+    execute(0);
+  }, 10000);
 });
 </script>
 
@@ -24,7 +27,7 @@ const result = ref({
       <div
         class="w-full px-4 py-2 font-semibold text-white rounded-t-lg bg-gradient-to-b from-orange-500 via-orange-600 to-orange-300"
       >
-        {{ dayjs(result.created_at).format("dddd, MMMM DD YYYY") }}
+        {{ dayjs(result["date"]).format("dddd, MMMM DD YYYY") }}
       </div>
 
       <div
@@ -37,14 +40,29 @@ const result = ref({
 
           <div
             class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
+            v-if="isReady"
           >
             <div
               class="from-red-500 via-red-700 to-red-300"
               :class="ballClass"
-              v-for="(num, i) in result.first"
+              v-for="(num, i) in result['grandPrize']"
               :key="i"
             >
               <Number :number="num" />
+            </div>
+          </div>
+
+          <div
+            class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
+            v-else
+          >
+            <div
+              class="from-red-500 via-red-700 to-red-300"
+              :class="ballClass"
+              v-for="i in 6"
+              :key="i"
+            >
+              <Number :number="null" />
             </div>
           </div>
         </div>
@@ -56,14 +74,29 @@ const result = ref({
 
           <div
             class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
+            v-if="isReady"
           >
             <div
               class="from-green-500 via-green-700 to-green-300"
               :class="ballClass"
-              v-for="(num, i) in result.second"
+              v-for="(num, i) in result['secondPrize']"
               :key="i"
             >
               <Number :number="num" />
+            </div>
+          </div>
+
+          <div
+            class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
+            v-else
+          >
+            <div
+              class="from-green-500 via-green-700 to-green-300"
+              :class="ballClass"
+              v-for="i in 6"
+              :key="i"
+            >
+              <Number :number="null" />
             </div>
           </div>
         </div>
@@ -75,14 +108,29 @@ const result = ref({
 
           <div
             class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
+            v-if="isReady"
           >
             <div
               class="from-purple-500 via-purple-700 to-purple-300"
               :class="ballClass"
-              v-for="(num, i) in result.third"
+              v-for="(num, i) in result['thirdPrize']"
               :key="i"
             >
               <Number :number="num" />
+            </div>
+          </div>
+
+          <div
+            class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
+            v-else
+          >
+            <div
+              class="from-purple-500 via-purple-700 to-purple-300"
+              :class="ballClass"
+              v-for="i in 6"
+              :key="i"
+            >
+              <Number :number="null" />
             </div>
           </div>
         </div>
@@ -94,14 +142,29 @@ const result = ref({
 
           <div
             class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
+            v-if="isReady"
           >
             <div
               class="from-yellow-500 via-yellow-700 to-yellow-300"
               :class="ballClass"
-              v-for="(num, i) in result.starter"
+              v-for="(num, i) in result['starter']"
               :key="i"
             >
               <Number :number="num" />
+            </div>
+          </div>
+
+          <div
+            class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
+            v-else
+          >
+            <div
+              class="from-yellow-500 via-yellow-700 to-yellow-300"
+              :class="ballClass"
+              v-for="i in 6"
+              :key="i"
+            >
+              <Number :number="null" />
             </div>
           </div>
         </div>
@@ -113,14 +176,29 @@ const result = ref({
 
           <div
             class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
+            v-if="isReady"
           >
             <div
               class="from-orange-500 via-orange-700 to-orange-300"
               :class="ballClass"
-              v-for="(num, i) in result.consolation"
+              v-for="(num, i) in result['consolation']"
               :key="i"
             >
               <Number :number="num" />
+            </div>
+          </div>
+
+          <div
+            class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
+            v-else
+          >
+            <div
+              class="from-orange-500 via-orange-700 to-orange-300"
+              :class="ballClass"
+              v-for="i in 6"
+              :key="i"
+            >
+              <Number :number="null" />
             </div>
           </div>
         </div>

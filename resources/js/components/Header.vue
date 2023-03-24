@@ -3,10 +3,10 @@ import { ref } from "vue";
 
 const showNavMobile = ref(false);
 const navClass =
-  "md:block py-1 hover:text-yellow-500 text-shadow shadow-black hidden";
+  "md:block py-1 hover:text-yellow-500 text-shadow shadow-black hidden bg-transparent";
 
 const navMobileClass =
-  "block py-2 px-4 hover:text-yellow-500 text-shadow-sm shadow-black";
+  "block py-2 px-4 hover:text-yellow-500 text-shadow-sm shadow-black bg-transparent";
 
 const toogleNavMobile = () => {
   showNavMobile.value = !showNavMobile.value;
@@ -17,11 +17,15 @@ const closeNavMobile = () => {
 </script>
 
 <template>
-  <header class="relative w-full">
+  <header class="relative w-full bg-white">
     <div class="flex justify-start w-full px-4 py-2 md:py-6">
       <div>
-        <a href="/" class="block">
-          <img src="/images/mandalay_logo.png" alt="Mandalay" class="w-80" />
+        <a href="/" class="block bg-transparent">
+          <img
+            src="/images/mandalay_logo.png"
+            alt="Mandalay"
+            class="w-64 md:w-80"
+          />
         </a>
       </div>
 
@@ -49,7 +53,7 @@ const closeNavMobile = () => {
 
     <transition-slide>
       <div
-        class="w-[100vw] absolute top-[100%] left-0 text-white font-semibold bg-center bg-no-repeat bg-cover"
+        class="w-full absolute top-[100%] left-0 text-white font-semibold bg-center bg-no-repeat bg-cover bg-transparent"
         style="background-image: url('images/bg_nav.jpg')"
         v-if="showNavMobile"
         v-click-outside="closeNavMobile"

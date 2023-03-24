@@ -12,7 +12,7 @@
         Retailer location.
       </li>
       <li>
-        Result of every draw will be provided every day at 16:30 PM (GMT+6.30)
+        Result of every draw will be provided every day at 10:45 AM (GMT+6.30)
         Mandalay Time.
       </li>
       <li>

@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import { ref, reactive } from "vue";
+import { ref, reactive, computed } from "vue";
 import dayjs from "dayjs";
+import { useAsyncState } from "@vueuse/core";
 import ResultBox from "@/components/ResultBox.vue";
+import { getAllResults } from "@/services/result.js";
+import { FulfillingBouncingCircleSpinner } from "epic-spinners";
 
 const today = Date.now();
 const input = reactive({
@@ -38,8 +41,20 @@ const results = ref([
   },
 ]);
 
-const submitDate = (e) => {
-  console.log(input.date);
+const { state, isReady, isLoading, execute } = useAsyncState((args) => {
+  if (args?.date) {
+    return getAllResults({ date: args?.date });
+  }
+
+  return null;
+}, {});
+
+const resultLists = computed(() => {
+  return state.value ? state.value["data"] : null;
+});
+
+const submitDate = () => {
+  execute(0, { date: input.date });
 };
 </script>
 
@@ -73,8 +88,30 @@ const submitDate = (e) => {
       </form>
     </div>
 
-    <div class="w-full">
-      <ResultBox v-for="result in results" :key="result.id" :result="result" />
+    <div class="flex items-center justify-center py-4" v-if="isLoading">
+      <fulfilling-bouncing-circle-spinner
+        :animation-duration="4000"
+        :size="40"
+        color="#ea580c"
+      />
+    </div>
+
+    <div class="w-full" v-else>
+      <div
+        v-if="
+          resultLists != null &&
+          resultLists != undefined &&
+          resultLists.length > 0
+        "
+      >
+        <ResultBox
+          v-for="result in resultLists"
+          :key="result.id"
+          :result="result"
+        />
+      </div>
+
+      <div class="py-6" v-else>Result Not Found.</div>
     </div>
   </div>
 </template>
