@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, reactive, onMounted } from "vue";
+import { ref } from "vue";
 
 const showNavMobile = ref(false);
 const navClass =
@@ -40,11 +40,11 @@ const closeNavMobile = () => {
       class="flex items-center justify-center w-full py-4 text-sm italic font-semibold text-white bg-center bg-no-repeat bg-cover md:text-base gap-x-6 md:gap-x-10 lg:gap-x-16 md:py-0"
       style="background-image: url('images/bg_nav.jpg')"
     >
-      <a href="#" :class="navClass">Home</a>
-      <a href="#" :class="navClass">Search by Date</a>
-      <a href="#" :class="navClass">Today Live</a>
-      <a href="#" :class="navClass">How to play</a>
-      <a href="#" :class="navClass">Contact Us</a>
+      <a href="/" :class="navClass">Home</a>
+      <a href="/search" :class="navClass">Search by Date</a>
+      <a href="/live" :class="navClass">Today Live</a>
+      <a href="/how-to-play" :class="navClass">How to play</a>
+      <a href="/contact-us" :class="navClass">Contact Us</a>
     </nav>
 
     <transition-slide>
@@ -55,11 +55,11 @@ const closeNavMobile = () => {
         v-click-outside="closeNavMobile"
       >
         <nav class="w-full flex flex-col justify-start [*$>a]:">
-          <a href="#" :class="navMobileClass">Home</a>
-          <a href="#" :class="navMobileClass">Search by Date</a>
-          <a href="#" :class="navMobileClass">Today Live</a>
-          <a href="#" :class="navMobileClass">How to play</a>
-          <a href="#" :class="navMobileClass">Contact Us</a>
+          <a href="/" :class="navMobileClass">Home</a>
+          <a href="/search" :class="navMobileClass">Search by Date</a>
+          <a href="/live" :class="navMobileClass">Today Live</a>
+          <a href="/how-to-play" :class="navMobileClass">How to play</a>
+          <a href="/contact-us" :class="navMobileClass">Contact Us</a>
         </nav>
       </div>
     </transition-slide>
