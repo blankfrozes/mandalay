@@ -10,40 +10,21 @@ use Illuminate\Support\Facades\Validator;
 
 class ResultController extends Controller
 {
-    public function index(): JsonResponse
+    public function index(Request $request): JsonResponse
     {
-        $results = Result::select(['id', 'periode', 'first', 'second', 'third', 'created_at'])
-            ->where(['complete' => 1])
-            ->orderBy('created_at', 'desc')
-            ->paginate(10);
-
-        return response()->json($results);
-    }
-
-    public function indexByDay(Request $request): JsonResponse
-    {
-        $validator = Validator::make($request->all(), [
-            'day' => 'required',
-        ]);
-
-        if($validator->fails())
-        {
-            return response()->json($validator->errors(), 422);
-        }
-
-        $dayNumber = getDayNumber($request->day);
-
-        if ($dayNumber === 0) {
-            return response()->json($validator->errors(), 422);
-        }
+        $filter = ['complete' => 1];
 
         $results = Result::select(['id', 'periode', 'first', 'second', 'third', 'starter', 'consolation', 'created_at'])
             ->where(['complete' => 1])
-            ->where(Result::raw("DAYOFWEEK(created_at)"), $dayNumber)
-            ->orderBy('created_at', 'desc')
-            ->paginate(12);
+            ->orderBy('created_at', 'desc');
 
-        return response()->json($results);
+        if ($request->query('date')) {
+            $results->whereDate('created_at', '=', $request->query('date'));
+        }
+
+
+
+        return response()->json($results->paginate(5));
     }
 
     /**

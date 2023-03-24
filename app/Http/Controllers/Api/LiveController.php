@@ -20,12 +20,6 @@ class LiveController extends Controller
     protected function checkHideOrShowNumber($second = 0, $string){
         if(CheckTime::checkFirstLiveDraw(0)){
             return CheckTime::checkFirstLiveDraw($second) ? $string : null;
-        }else if(CheckTime::checkSecondLiveDraw(0)){
-            return CheckTime::checkSecondLiveDraw($second) ? $string : null;
-        }else if(CheckTime::checkThirdLiveDraw(0)){
-            return CheckTime::checkThirdLiveDraw($second) ? $string : null;
-        }else if(CheckTime::checkFourthLiveDraw(0)){
-            return CheckTime::checkFourthLiveDraw($second) ? $string : null;
         }else{
             return $string;
         }
@@ -35,29 +29,53 @@ class LiveController extends Controller
 
     protected function setLiveDraw(){
         $result = $this->getLiveResult();
-        $consolation = explode(',', $result->consolation);
-        $starter = explode(',', $result->starter);
+        $first = str_split($result->first);
+        $second = str_split($result->second);
+        $third = str_split($result->third);
+        $starter = str_split($result->starter);
+        $consolation = str_split($result->consolation);
 
         return [
             'consolation' => [
-                $this->checkHideOrShowNumber(360, $consolation[0]),
-                $this->checkHideOrShowNumber(300, $consolation[1]),
-                $this->checkHideOrShowNumber(240, $consolation[2]),
-                $this->checkHideOrShowNumber(180, $consolation[3]),
-                $this->checkHideOrShowNumber(120, $consolation[4]),
-                $this->checkHideOrShowNumber(60, $consolation[5]),
+                $this->checkHideOrShowNumber(30, $consolation[5]),
+                $this->checkHideOrShowNumber(60, $consolation[4]),
+                $this->checkHideOrShowNumber(90, $consolation[3]),
+                $this->checkHideOrShowNumber(120, $consolation[2]),
+                $this->checkHideOrShowNumber(150, $consolation[1]),
+                $this->checkHideOrShowNumber(180, $consolation[0]),
             ],
             'starter' => [
-                $this->checkHideOrShowNumber(720, $starter[0]),
-                $this->checkHideOrShowNumber(660, $starter[1]),
-                $this->checkHideOrShowNumber(600, $starter[2]),
-                $this->checkHideOrShowNumber(540, $starter[3]),
-                $this->checkHideOrShowNumber(480, $starter[4]),
-                $this->checkHideOrShowNumber(420, $starter[5]),
+                $this->checkHideOrShowNumber(210, $starter[5]),
+                $this->checkHideOrShowNumber(240, $starter[4]),
+                $this->checkHideOrShowNumber(270, $starter[3]),
+                $this->checkHideOrShowNumber(300, $starter[2]),
+                $this->checkHideOrShowNumber(330, $starter[1]),
+                $this->checkHideOrShowNumber(360, $starter[0]),
             ],
-            'thirdPrize' => $this->checkHideOrShowNumber(780, $result->third),
-            'secondPrize' => $this->checkHideOrShowNumber(840, $result->second),
-            'grandPrize' => $this->checkHideOrShowNumber(900, $result->first),
+            'thirdPrize' => [
+                $this->checkHideOrShowNumber(390, $third[5]),
+                $this->checkHideOrShowNumber(420, $third[4]),
+                $this->checkHideOrShowNumber(450, $third[3]),
+                $this->checkHideOrShowNumber(480, $third[2]),
+                $this->checkHideOrShowNumber(510, $third[1]),
+                $this->checkHideOrShowNumber(540, $third[0]),
+            ],
+            'secondPrize' => [
+                $this->checkHideOrShowNumber(570, $second[5]),
+                $this->checkHideOrShowNumber(600, $second[4]),
+                $this->checkHideOrShowNumber(630, $second[3]),
+                $this->checkHideOrShowNumber(660, $second[2]),
+                $this->checkHideOrShowNumber(690, $second[1]),
+                $this->checkHideOrShowNumber(720, $second[0]),
+            ],
+            'grandPrize' => [
+                $this->checkHideOrShowNumber(750, $first[5]),
+                $this->checkHideOrShowNumber(780, $first[4]),
+                $this->checkHideOrShowNumber(810, $first[3]),
+                $this->checkHideOrShowNumber(840, $first[2]),
+                $this->checkHideOrShowNumber(870, $first[1]),
+                $this->checkHideOrShowNumber(900, $first[0]),
+            ],
             'date' => $result->created_at,
             'periode' => $result->periode,
         ];
@@ -67,7 +85,7 @@ class LiveController extends Controller
     {
         $response = $this->setLiveDraw();
 
-        CheckTime::checkFirstLiveDraw(950) ? $this->setLiveDrawToComplete() : null;
+        CheckTime::checkFirstLiveDraw(900) ? $this->setLiveDrawToComplete() : null;
 
         return response()->json($response);
     }
