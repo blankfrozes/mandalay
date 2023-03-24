@@ -13,18 +13,23 @@ class LiveController extends Controller
     protected function getLiveResult()
     {
         return Result::where([
-            'complete' => Result::where(['complete' => 0])->exists() ? 0 : 1,
+            'complete' => CheckTime::checkFirstLiveDraw(0) && Result::where(['complete' => 0])->exists() ? 0 : 1,
         ])->orderBy('periode', 'desc')->first();
     }
 
     protected function checkHideOrShowNumber($second = 0, $string){
+        $result = $string;
+
         if(CheckTime::checkFirstLiveDraw(0)){
-            return CheckTime::checkFirstLiveDraw($second) ? $string : null;
-        }else{
-            return $string;
+            $check = CheckTime::checkFirstLiveDraw($second);
+            $result =  $check ? $string : null;
+
+            if($second >= 900){
+                $check ? $this->setLiveDrawToComplete() : null;
+            }
         }
 
-        return null;
+        return $result;
     }
 
     protected function setLiveDraw(){
@@ -84,8 +89,6 @@ class LiveController extends Controller
     public function livedraw(): JsonResponse
     {
         $response = $this->setLiveDraw();
-
-        CheckTime::checkFirstLiveDraw(920) ? $this->setLiveDrawToComplete() : null;
 
         return response()->json($response);
     }
