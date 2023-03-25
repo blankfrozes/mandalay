@@ -44,11 +44,11 @@ const closeNavMobile = () => {
       class="flex items-center justify-center w-full py-4 text-sm italic font-semibold text-white bg-center bg-no-repeat bg-cover md:text-base gap-x-6 md:gap-x-10 lg:gap-x-16 md:py-0"
       style="background-image: url('images/bg_nav.jpg')"
     >
-      <a href="/" :class="navClass">Home</a>
-      <a href="/search" :class="navClass">Search by Date</a>
-      <a href="/live" :class="navClass">Today Live</a>
-      <a href="/how-to-play" :class="navClass">How to play</a>
-      <a href="/contact-us" :class="navClass">Contact Us</a>
+      <a href="/" :class="navClass">အိမ်</a>
+      <a href="/search" :class="navClass">ရက်စွဲဖြင့် ရှာဖွေရန်</a>
+      <a href="/live" :class="navClass">ယနေ့တွင် တင်သွင်းမှု</a>
+      <a href="/how-to-play" :class="navClass">ဘောလုံးကို ဘယ်လိုလုပ်ရမလဲ</a>
+      <a href="/contact-us" :class="navClass">ဆက်သွယ်ရန်</a>
     </nav>
 
     <transition-slide>
@@ -59,11 +59,13 @@ const closeNavMobile = () => {
         v-click-outside="closeNavMobile"
       >
         <nav class="w-full flex flex-col justify-start [*$>a]:">
-          <a href="/" :class="navMobileClass">Home</a>
-          <a href="/search" :class="navMobileClass">Search by Date</a>
-          <a href="/live" :class="navMobileClass">Today Live</a>
-          <a href="/how-to-play" :class="navMobileClass">How to play</a>
-          <a href="/contact-us" :class="navMobileClass">Contact Us</a>
+          <a href="/" :class="navMobileClass">အိမ်</a>
+          <a href="/search" :class="navMobileClass">ရက်စွဲဖြင့် ရှာဖွေရန်</a>
+          <a href="/live" :class="navMobileClass">ယနေ့တွင် တင်သွင်းမှု</a>
+          <a href="/how-to-play" :class="navMobileClass"
+            >ဘောလုံးကို ဘယ်လိုလုပ်ရမလဲ</a
+          >
+          <a href="/contact-us" :class="navMobileClass">ဆက်သွယ်ရန်</a>
         </nav>
       </div>
     </transition-slide>

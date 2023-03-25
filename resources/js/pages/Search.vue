@@ -61,7 +61,7 @@ const submitDate = () => {
 <template>
   <div class="w-full">
     <div class="w-full mb-6">
-      <div class="w-full mb-2">Search by Date :</div>
+      <div class="w-full mb-2">ရက်စွဲဖြင့် ရှာဖွေရန် :</div>
 
       <form
         @submit.prevent="submitDate"
@@ -82,7 +82,7 @@ const submitDate = () => {
             type="submit"
             class="px-4 py-2 font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-700"
           >
-            Submit
+            တင်သွင်းရန်
           </button>
         </div>
       </form>
@@ -111,7 +111,7 @@ const submitDate = () => {
         />
       </div>
 
-      <div class="py-6" v-else>Result Not Found.</div>
+      <div class="py-6" v-else>ရလဒ်မရှိသော ရလဒ်များ.</div>
     </div>
   </div>
 </template>

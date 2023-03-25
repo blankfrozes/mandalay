@@ -1,64 +1,74 @@
 <template>
   <div class="w-full">
-    <h1 class="w-full mb-6 text-3xl font-bold">How To Play</h1>
+    <h1 class="w-full mb-6 text-3xl font-bold">ကစားနည်း</h1>
 
     <ul class="w-full pl-4 text-sm list-disc list-outside">
       <li>
-        You must be 16/18/21 years of age or older to buy Lottery tickets and
-        claim prizes.
+        ထီလက်မှတ်များဝယ်ယူပြီး ဆုများရယူရန် သင်သည် အသက် 16/18/21 နှစ်နှင့်အထက်
+        ဖြစ်ရမည်။
       </li>
       <li>
-        Players are responsible for checking their tickets before leaving the
-        Retailer location.
+        ကစားသမားများသည် လက်လီရောင်းချသည့်နေရာမှ မထွက်ခွာမီ ၎င်းတို့၏
+        လက်မှတ်များကို စစ်ဆေးရန် တာဝန်ရှိသည်။
       </li>
       <li>
-        Result of every draw will be provided every day at 10:45 AM (GMT+6.30)
-        Mandalay Time.
+        နှိုက်မှုတိုင်း၏ရလဒ်ကို နေ့စဉ် နံနက် ၁၀ နာရီ ၄၅ မိနစ် (GMT+6.30)
+        မန္တလေးစံတော်ချိန်၌ ပေးမည်ဖြစ်ပါသည်။
       </li>
       <li>
-        A ticket is void if stolen, unissued, mutilated, illegible, tampered
-        with or altered in any way, defective or incomplete.
-      </li>
-      <li>The Lottery is not responsible for lost or stolen tickets.</li>
-      <li>
-        A Lotto/Lottery ticket may be cancelled only if presented before the
-        drawing to the Retailer where it was originally purchased. Powerball
-        tickets cannot be cancelled.
+        လက်မှတ်သည် ခိုးယူခံရခြင်း၊ မထုတ်ရသေးသော၊ ဖြတ်တောက်ခြင်း၊
+        ဖြတ်တောက်ခြင်းမပြုရန်၊ မည်သည့်နည်းဖြင့်မဆို ဟန်ချက်ညီညီ ပြောင်းလဲခြင်း
+        သို့မဟုတ် ချွတ်ယွင်းချက် မပြည့်စုံပါက လက်မှတ်သည် ပျက်ပြယ်သွားပါသည်။
       </li>
       <li>
-        Multi-drawing bets on the same number(s) may be made in advance for all
-        games. Ask Retailer for details.
+        ထီလက်မှတ် ပျောက်ဆုံးခြင်း သို့မဟုတ် ခိုးယူခံရခြင်းအတွက် တာဝန်မရှိပါ။
       </li>
       <li>
-        You must fill in your name, address and phone number on the back of your
-        winning ticket before you file a prize claim.
-      </li>
-      <li>All winning tickets are subject to validation by the Lottery.</li>
-      <li>All winning tickets are bearer instruments.</li>
-      <li>
-        All prizes must be claimed within 6 months/one year from date of
-        drawing.
+        မူလဝယ်ယူခဲ့သည့် လက်လီရောင်းချသူထံ ထီလက်မှတ်တစ်စောင်ကို
+        ပုံဆွဲခြင်းမတိုင်မီ တင်ပြမှသာ ထီ/ထီလက်မှတ်ကို ပယ်ဖျက်နိုင်သည်။ Powerball
+        လက်မှတ်များကို ပယ်ဖျက်၍မရပါ။
       </li>
       <li>
-        Pick out a lotto ticket at your grocery store or convenience store. The
-        lottery stands usually have little pencils to help you to pick your
-        numbers out on your lottery card.
+        ဂိမ်းအားလုံးအတွက် တူညီသော နံပါတ်(များ) ပေါ်တွင် အကြိမ်ပေါင်းများစွာ
+        ဆွဲခြင်း အလောင်းအစား ပြုလုပ်နိုင်ပါသည်။ အသေးစိတ်အတွက် လက်လီရောင်းချသူကို
+        မေးပါ။
       </li>
       <li>
-        Choose your numbers. You can do a random pick or you can use certain
-        number that are important to you such as birth.
+        ဆုကြေးငွေတောင်းခံလွှာမတင်မီ သင်၏အမည်၊ လိပ်စာနှင့် ဖုန်းနံပါတ်တို့ကို
+        ဖြည့်သွင်းရပါမည်။
       </li>
       <li>
-        Take your lottery ticket to the store owner and hand it to them. Usually
-        you have to pay cash for all lottery tickets. They will run your numbers
-        and ticket through a lotto machine and hand you a smaller ticket with
-        your registered numbers.
+        အနိုင်ရရှိထားသော လက်မှတ်များအားလုံးသည် ထီလက်မှတ်၏
+        တရားဝင်ခွင့်ပြုချက်ဖြစ်သည်။
       </li>
       <li>
-        After the lottery has been drawn, take your ticket to the grocery store
-        or convenience store and ask the retailer to check your ticket.
-        Retailers have a machine that they run your ticket through to check to
-        see if you are a winner or not.
+        အနိုင်ရသောလက်မှတ်များအားလုံးသည် ကိုင်ဆောင်ထားသည့် တူရိယာများဖြစ်သည်။
+      </li>
+      <li>
+        ဆုများအားလုံးကို ပုံဆွဲသည့်နေ့မှ 6 လ/ တစ်နှစ်အတွင်း တောင်းယူရမည်ဖြစ်သည်။
+      </li>
+      <li>
+        သင့်ကုန်စုံဆိုင် သို့မဟုတ် အဆင်ပြေစတိုးတွင် ထီလက်မှတ်တစ်စောင်ကို ရွေးပါ။
+        ထီဆိုင်များတွင် သင့်ထီကတ်ပေါ်ရှိ သင့်နံပါတ်များကို ရွေးထုတ်နိုင်ရန်
+        ကူညီရန် ခဲတံအနည်းငယ်ရှိတတ်သည်။
+      </li>
+      <li>
+        သင်၏နံပါတ်များကိုရွေးချယ်ပါ။ ကျပန်းရွေးချယ်နိုင်သည် သို့မဟုတ်
+        မွေးဖွားခြင်းကဲ့သို့သော သင့်အတွက် အရေးကြီးသည့်နံပါတ်အချို့ကို
+        သင်အသုံးပြုနိုင်သည်။
+      </li>
+      <li>
+        သင့်ထီလက်မှတ်ကို စတိုးဆိုင်ပိုင်ရှင်ထံ ယူဆောင်ပြီး ၎င်းတို့ထံ ပေးအပ်ပါ။
+        အများအားဖြင့် ထီထိုးရန် ငွေသားပေးချေရတတ်သည်။ ၎င်းတို့သည်
+        သင့်နံပါတ်များနှင့် လက်မှတ်များကို lotto စက်မှတဆင့်
+        လုပ်ဆောင်ပေးမည်ဖြစ်ပြီး သင်၏စာရင်းသွင်းထားသော နံပါတ်များဖြင့် သေးငယ်သော
+        လက်မှတ်တစ်စောင်ကို သင့်ထံ ပေးအပ်မည်ဖြစ်သည်။
+      </li>
+      <li>
+        ထီပေါက်ပြီးပါက သင့်လက်မှတ်ကို ကုန်စုံဆိုင် သို့မဟုတ် ကုန်စုံဆိုင်သို့
+        ယူဆောင်ပြီး သင့်လက်မှတ်ကို လက်လီရောင်းချသူကို စစ်ဆေးခိုင်းပါ။
+        လက်လီရောင်းချသူများသည် သင့်လက်မှတ်ကို ဖြတ်ကျော်ကာ
+        သင်အောင်မြင်သူဟုတ်မဟုတ် စစ်ဆေးရန် စက်တစ်ခုရှိသည်။
       </li>
     </ul>
   </div>

@@ -36,7 +36,7 @@ onMounted(() => {
         <div
           class="flex items-center justify-start w-full py-6 border-b border-yellow-500 gap-x-2 last:border-b-0"
         >
-          <div class="w-32 font-bold">1st Prize</div>
+          <div class="w-32 font-bold break-words">ပထမဆုံးဆုတောင်</div>
 
           <div
             class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
@@ -70,7 +70,7 @@ onMounted(() => {
         <div
           class="flex items-center justify-start w-full py-6 border-b border-yellow-500 gap-x-2 last:border-b-0"
         >
-          <div class="w-32 font-bold">2nd Prize</div>
+          <div class="w-32 font-bold break-words">ဒုတိယဆုတောင်း</div>
 
           <div
             class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
@@ -104,7 +104,7 @@ onMounted(() => {
         <div
           class="flex items-center justify-start w-full py-6 border-b border-yellow-500 gap-x-2 last:border-b-0"
         >
-          <div class="w-32 font-bold">3rd Prize</div>
+          <div class="w-32 font-bold break-words">တတိယဆုတောင်း</div>
 
           <div
             class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
@@ -138,7 +138,7 @@ onMounted(() => {
         <div
           class="flex items-center justify-start w-full py-6 border-b border-yellow-500 gap-x-2 last:border-b-0"
         >
-          <div class="w-32 font-bold">Staret Prize</div>
+          <div class="w-32 font-bold break-words">စတာတစ်ခုခုဆုတောင်း</div>
 
           <div
             class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"
@@ -172,7 +172,9 @@ onMounted(() => {
         <div
           class="flex items-center justify-start w-full py-6 border-b border-yellow-500 gap-x-2 last:border-b-0"
         >
-          <div class="w-32 font-bold">Consolation</div>
+          <div class="w-32 font-bold break-words">
+            ကုန်ကျော်သောပြုလုပ်ဆောင်ခြင်း
+          </div>
 
           <div
             class="flex items-center justify-center flex-1 font-bold text-white gap-x-2"

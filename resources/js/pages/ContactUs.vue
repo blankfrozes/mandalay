@@ -1,14 +1,18 @@
 <template>
   <div class="w-full">
-    <h1 class="w-full mb-6 text-3xl font-bold">Contact Us</h1>
+    <h1 class="w-full mb-6 text-3xl font-bold">ဆက်သွယ်ရန်</h1>
 
     <div class="w-full">
-      We are dedicated to not only producing the best lottery software available
-      but also to giving fast, high quality product support for your Lotto
-      Buster software. If you should have any questions or problems , do not
-      hesitate to contact us using one of the below contact options.<br /><br />
+      ရရှိနိုင်သောအကောင်းဆုံးထီဆော့ဖ်ဝဲလ်ကိုထုတ်လုပ်ရုံသာမက သင်၏ Lotto Buster
+      ဆော့ဖ်ဝဲလ်အတွက် မြန်ဆန်ပြီး
+      အရည်အသွေးမြင့်ထုတ်ကုန်ပံ့ပိုးမှုပေးရန်အတွက်လည်း ကျွန်ုပ်တို့အား
+      ရည်စူးပါသည်။ သင့်တွင် မေးခွန်းများ သို့မဟုတ် ပြဿနာများရှိပါက၊
+      အောက်ဖော်ပြပါ အဆက်အသွယ်ရွေးချယ်စရာများထဲမှ တစ်ခုကို အသုံးပြု၍
+      ကျွန်ုပ်တို့ထံ ဆက်သွယ်ရန် မတွန့်ဆုတ်ပါနှင့်။<br /><br />
 
-      <span class="font-semibold">Email: support@mandalaypoolstoday.com</span>
+      <span class="font-semibold"
+        >အီးမေးလ်: support@mandalaypoolstoday.com</span
+      >
     </div>
   </div>
 </template>
