@@ -9,15 +9,12 @@ import Ads from "./components/Ads.vue";
       <Header />
 
       <div class="w-full">
-        <div class="w-full px-4 py-4 bg-blue-100">
+        <div class="w-full px-4 py-4 bg-blue-100 max-h-[35rem] overflow-hidden rounded-b-xl shadow-lg">
           <div class="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-            <div class="overflow-y-auto min-h-[50vh] max-h-[120vh] hide-scroll">
+            <div class="overflow-y-auto max-h-[35rem] hide-scroll">
               <router-view />
             </div>
-
-            <div>
-              <Ads />
-            </div>
+            <Ads />
           </div>
         </div>
       </div>

@@ -18,8 +18,8 @@ class ResultSeeder extends Seeder
     {
         $results = [];
 
-        $begin = new Carbon('2021-01-01 10:45:00');
-        $end = new Carbon('2023-03-23 11:00:00');
+        $begin = new Carbon('2022-01-01 10:45:00');
+        $end = new Carbon('2023-03-27 11:00:00');
         $a = 0;
         $b = 1;
 

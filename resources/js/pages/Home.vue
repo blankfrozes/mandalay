@@ -13,21 +13,19 @@ const resultLists = computed(() => state.value["data"]);
 </script>
 
 <template>
-  <div class="w-full">
-    <div v-if="isReady">
-      <ResultBox
+  <div v-if="isReady">
+    <ResultBox
         v-for="result in resultLists"
         :key="result.id"
         :result="result"
-      />
-    </div>
+    />
+  </div>
 
-    <div class="flex items-center justify-center py-4" v-else-if="isLoading">
-      <fulfilling-bouncing-circle-spinner
+  <div class="flex items-center justify-center py-4" v-else-if="isLoading">
+    <fulfilling-bouncing-circle-spinner
         :animation-duration="4000"
         :size="40"
         color="#ea580c"
-      />
-    </div>
+    />
   </div>
 </template>

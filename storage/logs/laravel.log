@@ -11331,3 +11331,113 @@
 #57 C:\\Work\\laravel\\mandalay\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Work\\\\laravel...')
 #58 {main}
 "} 
+[2023-03-26 10:11:17] local.ERROR: There are no commands defined in the "octane" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"octane\" namespace. at /var/www/html/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/console/Application.php(683): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /var/www/html/vendor/symfony/console/Application.php(256): Symfony\\Component\\Console\\Application->find()
+#2 /var/www/html/vendor/symfony/console/Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run()
+#5 /var/www/html/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2023-03-26 10:11:24] local.ERROR: There are no commands defined in the "octane" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"octane\" namespace. at /var/www/html/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/console/Application.php(683): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /var/www/html/vendor/symfony/console/Application.php(256): Symfony\\Component\\Console\\Application->find()
+#2 /var/www/html/vendor/symfony/console/Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run()
+#5 /var/www/html/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2023-03-26 10:11:30] local.ERROR: There are no commands defined in the "octane" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"octane\" namespace. at /var/www/html/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/console/Application.php(683): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /var/www/html/vendor/symfony/console/Application.php(256): Symfony\\Component\\Console\\Application->find()
+#2 /var/www/html/vendor/symfony/console/Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run()
+#5 /var/www/html/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2023-03-26 10:11:36] local.ERROR: There are no commands defined in the "octane" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"octane\" namespace. at /var/www/html/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/console/Application.php(683): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /var/www/html/vendor/symfony/console/Application.php(256): Symfony\\Component\\Console\\Application->find()
+#2 /var/www/html/vendor/symfony/console/Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run()
+#5 /var/www/html/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2023-03-26 10:11:43] local.ERROR: There are no commands defined in the "octane" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"octane\" namespace. at /var/www/html/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/console/Application.php(683): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /var/www/html/vendor/symfony/console/Application.php(256): Symfony\\Component\\Console\\Application->find()
+#2 /var/www/html/vendor/symfony/console/Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run()
+#5 /var/www/html/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2023-03-26 10:11:49] local.ERROR: There are no commands defined in the "octane" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"octane\" namespace. at /var/www/html/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/console/Application.php(683): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /var/www/html/vendor/symfony/console/Application.php(256): Symfony\\Component\\Console\\Application->find()
+#2 /var/www/html/vendor/symfony/console/Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run()
+#5 /var/www/html/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2023-03-26 10:11:57] local.ERROR: There are no commands defined in the "octane" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"octane\" namespace. at /var/www/html/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/console/Application.php(683): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /var/www/html/vendor/symfony/console/Application.php(256): Symfony\\Component\\Console\\Application->find()
+#2 /var/www/html/vendor/symfony/console/Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run()
+#5 /var/www/html/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2023-03-26 10:12:06] local.ERROR: There are no commands defined in the "octane" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"octane\" namespace. at /var/www/html/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/console/Application.php(683): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /var/www/html/vendor/symfony/console/Application.php(256): Symfony\\Component\\Console\\Application->find()
+#2 /var/www/html/vendor/symfony/console/Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run()
+#5 /var/www/html/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2023-03-26 10:12:13] local.ERROR: There are no commands defined in the "octane" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"octane\" namespace. at /var/www/html/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/console/Application.php(683): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /var/www/html/vendor/symfony/console/Application.php(256): Symfony\\Component\\Console\\Application->find()
+#2 /var/www/html/vendor/symfony/console/Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run()
+#5 /var/www/html/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2023-03-26 10:12:19] local.ERROR: There are no commands defined in the "octane" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"octane\" namespace. at /var/www/html/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/console/Application.php(683): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /var/www/html/vendor/symfony/console/Application.php(256): Symfony\\Component\\Console\\Application->find()
+#2 /var/www/html/vendor/symfony/console/Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run()
+#5 /var/www/html/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2023-03-26 10:12:25] local.ERROR: There are no commands defined in the "octane" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"octane\" namespace. at /var/www/html/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/console/Application.php(683): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /var/www/html/vendor/symfony/console/Application.php(256): Symfony\\Component\\Console\\Application->find()
+#2 /var/www/html/vendor/symfony/console/Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run()
+#5 /var/www/html/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 

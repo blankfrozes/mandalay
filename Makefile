@@ -7,6 +7,9 @@ dev:
 watch:
 	pnpm run watch
 
+build:
+	pnpm run build
+
 migrate-fresh:
 	php artisan migrate:fresh
 
