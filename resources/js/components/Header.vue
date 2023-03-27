@@ -18,7 +18,7 @@ const closeNavMobile = () => {
 
 <template>
   <header class="relative w-full bg-white">
-    <div class="flex justify-start w-full px-4 py-2 md:py-6">
+    <div class="flex justify-between items-center w-full px-4 py-2 md:py-6 md:space-x-2">
       <div>
         <a href="/" class="block bg-transparent">
           <img
@@ -26,6 +26,12 @@ const closeNavMobile = () => {
             alt="Mandalay"
             class="w-64 md:w-80"
           />
+        </a>
+      </div>
+
+      <div class="hidden sm:block flex-1 flex items-center">
+        <a href="http://www.partycasino.com/td/93992usd_topgun.htm?wm=3111672">
+          <img src="@/images/noblecasino.avif" alt="noblecasino" class="w-full" />
         </a>
       </div>
 
