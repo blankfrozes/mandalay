@@ -8,12 +8,13 @@
     <title>Mandalay</title>
 
     <!-- Fonts -->
-    @vite(['resources/js/app.js', 'resources/css/app.css'])
+    @vite(['resources/css/app.css'])
 </head>
 
 <body class="antialiased">
     <div id="app">
     </div>
+    @vite(['resources/js/app.js'])
 </body>
 
 </html>

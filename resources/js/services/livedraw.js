@@ -1,11 +1,11 @@
-import axios from 'axios';
+import axios from 'axios'
 
 export const getLivedrawResult = async (page) => {
   try {
-    const {data: results} = await axios.get(`/api/v1/livedraw`);
+    const { data: results } = await axios.get(`/api/v1/livedraw`)
 
-    return results;
+    return results
   } catch (error) {
-    throw error;
+    throw error
   }
-};
+}
